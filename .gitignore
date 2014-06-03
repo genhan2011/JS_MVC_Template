@@ -1,0 +1,5 @@
+node-modules
+.idea
+build/app.min.js
+build/css/app.min.css
+app/config.js

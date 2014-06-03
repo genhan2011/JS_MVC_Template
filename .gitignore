@@ -1,5 +1,7 @@
-node-modules
 .idea
 build/app.min.js
 build/css/app.min.css
 app/config.js
+node-modules/.bin
+node-modules/requirejs
+node-modules/uglify-js

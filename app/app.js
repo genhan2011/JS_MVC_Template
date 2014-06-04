@@ -7,11 +7,13 @@ require.config({
     }
 });
 
-require(['lib/jquery', 'app/config'], function($, config) {
+require(['lib/jquery', 'app/config',
+    'app/controller/map'], function($, config, mapCtrl) {
+
     function callback(resp) {
         if (resp && !resp.error) {
             var token = resp.access_token;
-            console.log("OAuth token:", token);
+            mapCtrl.initMap(token);
         } else {
             console.log(resp);
             alert('Authorization failed!');
